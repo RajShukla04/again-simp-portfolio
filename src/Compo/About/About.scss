@@ -1,0 +1,74 @@
+.about_me {
+  height: 100vh;
+
+  width: 100%;
+  margin-top: 0px;
+  .lol {
+    height: 4vh;
+  }
+  h1 {
+    color: #000;
+    transition: 0.6s ease-in-out;
+    @media screen and (max-width: 1200px) {
+      font-size: 30px;
+    } 
+    &:hover {
+      color: rgb(159, 58, 221);
+    }
+  }
+  .h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 6rem;
+  }
+  .about_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem;
+    @media screen and (max-width: 450px){
+      padding: 0;
+      font-size: 0.6rem;
+      flex-direction: column;
+      margin-top: 2rem;
+      gap: 3rem;
+    }
+    .about_left {
+      font-size: 1.4rem;
+      padding: 6rem;
+      @media screen and (max-width: 450px){
+        padding: 0;
+      }
+      h4 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        @media screen and (max-width: 450px){
+          font-size: 2rem;
+          margin-bottom: 0;
+          margin-top: 1px;
+        }
+
+      }
+      p {
+        line-height: 1.5;
+        @media screen and (max-width: 450px){
+          font-size: 0.6rem;
+          margin-top: 2px;
+        }
+      }
+      .tex {
+        margin-top: 3rem;
+        @media screen and (max-width: 450px){
+          margin-top: 1rem;
+        }
+      }
+    }
+    .about_right {
+      img{
+        @media screen and (max-width: 450px){
+          width: 350px;
+        }
+      }
+    }
+  }
+}

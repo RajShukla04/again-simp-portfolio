@@ -1,0 +1,77 @@
+.contact {
+  height: 100vh;
+  .space {
+    height: 122px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 40px;
+    @media screen and (max-width: 450px){
+      font-size: 2rem;
+    
+    }
+  }
+  .map {
+    @media screen and (max-width: 450px){
+      height: 200px;
+    }
+  }
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .contact-form {
+
+      form {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        input {
+          padding: 0.7rem;
+          background: rgb(159, 58, 221);
+          width: 50rem;
+
+          border: none;
+          outline: none;
+            @media screen and (max-width: 450px){
+              width: 100%;
+            }
+
+          &:focus {
+            border: none;
+          }
+          &::placeholder {
+            color: #fff;
+          }
+          &:active {
+            border: none;
+          }
+        }
+        textarea {
+          background-color: rgb(159, 58, 221);
+          outline: none;
+          @media screen and (max-width: 450px){
+            width: 298px;
+          }
+          &::placeholder {
+            color: #fff;
+            border: none;
+          }
+        } 
+        .inp {
+          margin: 2rem auto;
+          width: 6rem;
+          color: #fff;
+          transition: 0.6s ease-in-out;
+          &:hover {
+            background-color: #fff;
+            color: #000;
+          } 
+        } 
+      }
+    }
+  }
+}

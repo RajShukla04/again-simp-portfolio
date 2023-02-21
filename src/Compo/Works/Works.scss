@@ -1,0 +1,111 @@
+.works {
+  height: 80vh;
+  padding: 3rem;
+  background-image: linear-gradient(to left, #ee61b1, #dc72c8, #c781d9, #b18fe4, #9b9be9, #88a8f2, #77b4f7, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  .project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1 {
+      font-size: 6rem;
+      text-align: center;
+      @media screen and (max-width: 450px){
+        font-size: 2rem;
+      }
+      span {
+        color: rgb(159, 58, 221);
+      }
+    }
+    p {
+      position: absolute;
+   
+      margin-top: 19rem;
+      left: 10;
+      font-size: 33rem;
+      @media screen and (max-width: 450px){
+        
+        display: none;
+      }
+    }
+    .img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 14rem;
+      @media screen and (max-width: 450px){
+        flex-direction: column;
+        margin-top: 8rem;
+      }
+
+      .image1 {
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(9px);
+      
+       
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+          backdrop-filter: blur(9px);
+          
+        img {
+          width: 15rem;
+          padding: 50px;
+          transition: 0.6s ease-in-out;
+          border-radius: 60px;
+          @media screen and (max-width: 450px){
+            width: 8rem;
+            padding: 20px;
+            border-radius: 0;
+          }
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
+      .image2 {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(5px);
+
+        img {
+          width: 15rem;
+          border-radius: 60px;
+          padding: 50px;
+          transition: 0.6s ease-in-out;
+          @media screen and (max-width: 450px){
+            width: 8rem;
+            padding: 20px;
+            border-radius: 0;
+          }
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
+      .image3 {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(25px);
+    
+        img {
+          border-radius: 60px;
+          width: 16rem;
+          padding: 50px;
+          transition: 0.6s ease-in-out;
+          @media screen and (max-width: 450px){
+            width: 8rem;
+            padding: 20px;
+            border-radius: 0;
+          }
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Navbar from "./Compo/Navbar/Navbar";
+import CurrentWeather from "./components/Current-weather/CurrentWeather";
+import Search from "./components/search/Search";
+import "./App.css";
+import Hero from "./Compo/Hero/Hero";
+import About from "./Compo/About/About";
+import Works from "./Compo/Works/Works";
+import Contact from "./Compo/Contact/Contact";
 function App() {
+  const handleOnSearchChange = (searchData) => {
+    console.log(searchData);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    //   {/*
+    //   <div className="container">
+    //   <Search onSearchChange={handleOnSearchChange}/>
+    // <CurrentWeather />
+
+    //</div>
+    // */}
+    <div className="container">
+     {/* <Navbar /> */}
+      <Hero />
+      <About />
+      <Works />
+      <Contact />
     </div>
   );
 }
